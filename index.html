@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Command — Build. Learn. Deploy.</title>
+  <meta name="description" content="Tech Command: tutorials, services, and tools to build, learn, and deploy modern tech solutions." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Tech Command logo" />
+      <span>Tech Command</span>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="btn btn--primary">Contact</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Build. Learn. Deploy.</h1>
+      <p>Tech Command helps creators and teams ship faster — with tutorials, tools, and on‑demand services.</p>
+      <div class="actions">
+        <a href="services.html" class="btn btn--primary">Explore Services</a>
+        <a href="blog.html" class="btn btn--ghost">Read Tutorials</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Grid -->
+  <section class="section">
+    <div class="container grid cols-3">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Clean, responsive, SEO‑ready websites and apps using modern standards.</p>
+      </div>
+      <div class="card">
+        <h3>Automation</h3>
+        <p>Save time with custom scripts and workflows that handle the boring stuff.</p>
+      </div>
+      <div class="card">
+        <h3>Blockchain</h3>
+        <p>Smart contracts, wallets, and integrations built with security in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section section--accent">
+    <div class="container cta">
+      <h2>Get updates from Tech Command</h2>
+      <form id="newsletterForm" class="inline-form" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+      <p class="form-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img src="assets/logo.png" alt="Tech Command logo" />
+          <span>Tech Command</span>
+        </a>
+        <p>© <span id="year"></span> Tech Command. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Twitter/X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

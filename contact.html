@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Tech Command</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Tech Command logo" />
+      <span>Tech Command</span>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active btn btn--primary">Contact</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main class="container section">
+    <h1>Contact</h1>
+    <p>Tell us what you want to build. We’ll reply within 24 hours.</p>
+
+    <!--
+      Formspree integration:
+      1) Create a form at https://formspree.io and copy the endpoint (looks like: https://formspree.io/f/{form_id})
+      2) Replace the placeholder in the `action` attribute below with your Formspree endpoint.
+      3) The site uses JavaScript to submit the form via fetch and show success/error messages.
+    -->
+
+    <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <div class="grid cols-2">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" id="email" required />
+        </label>
+      </div>
+      <label>
+        <span>Subject</span>
+        <input type="text" name="subject" id="subject" required />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" id="message" rows="6" required></textarea>
+      </label>
+
+      <!-- Optional: set a custom subject for emails received via Formspree -->
+      <input type="hidden" name="_subject" value="New message from Tech Command website" />
+
+      <!-- Optional: redirect (Formspree can redirect on success) or we handle via JS -->
+      <button type="submit" class="btn btn--primary">Send Message</button>
+      <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img src="assets/logo.png" alt="Tech Command logo" />
+          <span>Tech Command</span>
+        </a>
+        <p>© <span id="year"></span> Tech Command. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Twitter/X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

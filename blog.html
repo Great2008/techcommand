@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — Tech Command</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Tech Command logo" />
+      <span>Tech Command</span>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html" class="btn btn--primary">Contact</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main class="container section">
+    <h1>Latest Tutorials & Updates</h1>
+
+    <div class="posts">
+      <article class="post">
+        <a href="#">
+          <h3>Deploy a Static Site on GitHub Pages</h3>
+        </a>
+        <p class="meta">August 19, 2025 · 5 min read</p>
+        <p>Step‑by‑step guide to push your site and go live in minutes.</p>
+      </article>
+
+      <article class="post">
+        <a href="#">
+          <h3>Beginner’s Guide to Automating Repetitive Tasks</h3>
+        </a>
+        <p class="meta">August 15, 2025 · 7 min read</p>
+        <p>From spreadsheets to notifications — automate the boring stuff safely.</p>
+      </article>
+
+      <article class="post">
+        <a href="#">
+          <h3>Understanding EVM Smart Contracts</h3>
+        </a>
+        <p class="meta">August 8, 2025 · 6 min read</p>
+        <p>Core concepts, tooling, and security basics for building on Ethereum.</p>
+      </article>
+    </div>
+
+    <p class="muted">Want to publish full posts? Create a <code>posts/</code> folder and link real HTML files here.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <img src="assets/logo.png" alt="Tech Command logo" />
+          <span>Tech Command</span>
+        </a>
+        <p>© <span id="year"></span> Tech Command. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Twitter/X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
