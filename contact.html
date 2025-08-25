@@ -28,13 +28,17 @@
     <h1>Contact</h1>
     <p>Tell us what you want to build. We’ll reply within 24 hours.</p>
 
-    <!--
-      Formspree integration:
-      1) Create a form at https://formspree.io and copy the endpoint (looks like: https://formspree.io/f/{form_id})
-      2) Replace the placeholder in the `action` attribute below with your Formspree endpoint.
-      3) The site uses JavaScript to submit the form via fetch and show success/error messages.
-    -->
+    <!-- WhatsApp Direct Contact -->
+    <div class="whatsapp-contact">
+      <p>You can also reach us instantly on WhatsApp:</p>
+      <a href="https://wa.me/message/2WH6NHHG6JVNP1" target="_blank" class="btn btn--primary">
+        💬 Chat with Us on WhatsApp
+      </a>
+    </div>
 
+    <hr />
+
+    <!-- Contact Form (Optional, still available if you want to keep it) -->
     <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
       <div class="grid cols-2">
         <label>
@@ -55,10 +59,7 @@
         <textarea name="message" id="message" rows="6" required></textarea>
       </label>
 
-      <!-- Optional: set a custom subject for emails received via Formspree -->
       <input type="hidden" name="_subject" value="New message from Tech Command website" />
-
-      <!-- Optional: redirect (Formspree can redirect on success) or we handle via JS -->
       <button type="submit" class="btn btn--primary">Send Message</button>
       <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
     </form>
