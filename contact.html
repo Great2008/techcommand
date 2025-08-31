@@ -4,70 +4,75 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — GraphiTech Command</title>
+  <meta name="description" content="Contact GraphiTech Command for your graphics, branding, and tech needs. Reach out via our contact form or chat with us instantly on WhatsApp." />
+  <meta name="keywords" content="contact, contact form, WhatsApp, chat, email, phone number, GraphiTech Command, get a quote" />
+  <link rel="canonical" href="https://www.yourwebsite.com/contact.html" />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="GraphiTech Command home">
       <img src="assets/logo.png" alt="Tech Command logo" />
       <span>GraphiTech Command</span>
     </a>
     <nav id="nav" class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active btn btn--primary">Contact</a>
+      <a href="index.html" aria-label="Home page">Home</a>
+      <a href="about.html" aria-label="About us page">About</a>
+      <a href="services.html" aria-label="Our services page">Services</a>
+      <a href="contact.html" class="active btn btn--primary" aria-label="Contact us page">Contact</a>
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
     </nav>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </header>
 
   <main class="container section">
-    <h1>Contact</h1>
+    <h1>Contact Us</h1>
     <p>Tell us what you want to build. We’ll reply within 24 hours.</p>
 
-    <!-- WhatsApp Direct Contact -->
     <div class="whatsapp-contact">
+      <h2>Instant Communication</h2>
       <p>You can also reach us instantly on WhatsApp:</p>
-      <a href="https://wa.me/message/2WH6NHHG6JVNP1" target="_blank" class="btn btn--primary">
+      <a href="https://wa.me/message/2WH6NHHG6JVNP1" target="_blank" class="btn btn--primary" aria-label="Chat with us on WhatsApp">
         💬 Chat with Us on WhatsApp
       </a>
     </div>
 
     <hr />
 
-    <!-- Contact Form (Optional, still available if you want to keep it) -->
-    <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-      <div class="grid cols-2">
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" id="name" required />
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="grid cols-2">
+          <label for="name">
+            Name
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label for="email">
+            Email
+            <input type="email" name="email" id="email" required />
+          </label>
+        </div>
+        <label for="subject">
+          Subject
+          <input type="text" name="subject" id="subject" required />
         </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" id="email" required />
+        <label for="message">
+          Message
+          <textarea name="message" id="message" rows="6" required></textarea>
         </label>
-      </div>
-      <label>
-        <span>Subject</span>
-        <input type="text" name="subject" id="subject" required />
-      </label>
-      <label>
-        <span>Message</span>
-        <textarea name="message" id="message" rows="6" required></textarea>
-      </label>
 
-      <input type="hidden" name="_subject" value="New message from Tech Command website" />
-      <button type="submit" class="btn btn--primary">Send Message</button>
-      <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
-    </form>
+        <input type="hidden" name="_subject" value="New message from Tech Command website" />
+        <button type="submit" class="btn btn--primary">Send Message</button>
+        <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand--footer" href="index.html">
+        <a class="brand brand--footer" href="index.html" aria-label="GraphiTech Command home">
           <img src="assets/logo.png" alt="Tech Command logo" />
           <span> GraphiTech Command</span>
         </a>
@@ -76,17 +81,17 @@
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" aria-label="About us page">About</a></li>
+          <li><a href="services.html" aria-label="Our services page">Services</a></li>
+          <li><a href="contact.html" aria-label="Contact us page">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Follow</h4>
         <ul>
-          <li><a href="#">Twitter/X</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="#" aria-label="Twitter/X profile">Twitter/X</a></li>
+          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
         </ul>
       </div>
     </div>

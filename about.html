@@ -4,26 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — GraphiTech Command</title>
+  <meta name="description" content="Learn about GraphiTech Command's mission, values, and our unique blend of creative and technical services. We specialize in design, branding, web development, and more." />
+  <meta name="keywords" content="about us, GraphiTech Command, mission, values, company, creativity, technology, design, branding, web development" />
+  <link rel="canonical" href="https://www.yourwebsite.com/about.html" />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="GraphiTech Command home">
       <img src="assets/logo.png" alt="GraphiTech Command logo" />
       <span>GraphiTech Command</span>
     </a>
     <nav id="nav" class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="btn btn--primary">Contact</a>
+      <a href="index.html" aria-label="Home page">Home</a>
+      <a href="about.html" class="active" aria-label="About us page">About</a>
+      <a href="services.html" aria-label="Our services page">Services</a>
+      <a href="contact.html" class="btn btn--primary" aria-label="Contact us page">Contact</a>
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
     </nav>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </header>
 
-  <main class="container section">
+  <main class="container section" id="main-content">
     <h1>About GraphiTech Command</h1>
     <p>
       GraphiTech Command is a dynamic company that blends creativity and technology. 
@@ -65,7 +68,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand--footer" href="index.html">
+        <a class="brand brand--footer" href="index.html" aria-label="GraphiTech Command home">
           <img src="assets/logo.png" alt="GraphiTech Command logo" />
           <span>GraphiTech Command</span>
         </a>
@@ -74,17 +77,17 @@
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" aria-label="About us page">About</a></li>
+          <li><a href="services.html" aria-label="Our services page">Services</a></li>
+          <li><a href="contact.html" aria-label="Contact us page">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Follow</h4>
         <ul>
-          <li><a href="#">Twitter/X</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="#" aria-label="Twitter/X profile">Twitter/X</a></li>
+          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
         </ul>
       </div>
     </div>
