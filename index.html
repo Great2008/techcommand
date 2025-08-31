@@ -6,66 +6,87 @@
   <title>GraphiTech Command — Design. Print. Brand. Deploy.</title>
   <meta name="description" content="GraphiTech Command: graphics design, printing, branding, tutorials, services, and tools to design, build, and deploy modern solutions." />
   <meta name="keywords" content="graphics, design, printing, branding, web development, blockchain, automation, services, tools" />
-  <link rel="canonical" href="https://www.yourwebsite.com/index.html" />
+  <link rel="canonical" href="https://www.yourwebsite.com/" />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="GraphiTech Command home">
-      <img src="assets/logo.png" alt="GraphiTech Command logo" />
+      <img src="assets/logo.png" alt="GraphiTech Command logo" width="34" height="34" />
       <span>GraphiTech Command</span>
     </a>
-    <nav id="nav" class="nav">
-      <a href="index.html" class="active" aria-label="Home page">Home</a>
+    <nav id="main-nav" class="nav">
+      <a href="index.html" class="active" aria-label="Home page" aria-current="page">Home</a>
       <a href="about.html" aria-label="About us page">About</a>
       <a href="services.html" aria-label="Our services page">Services</a>
+      <a href="portfolio.html" aria-label="Portfolio page">Portfolio</a>
       <a href="contact.html" class="btn btn--primary" aria-label="Contact us page">Contact</a>
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
     </nav>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </header>
 
-  <main id="main-content">
+  <main>
     <section class="hero">
       <div class="container">
         <h1>Design. Print. Brand. Deploy.</h1>
         <p>GraphiTech Command empowers businesses and creators with graphics, printing, branding, and tech solutions — all in one place.</p>
         <div class="actions">
           <a href="services.html" class="btn btn--primary">Engage Our Services</a>
+          <a href="portfolio.html" class="btn btn--ghost">View Our Work</a>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid cols-3">
+      <div class="container grid cols-2">
         <div class="card">
           <h3>Graphics & Design</h3>
-          <p>Logos, flyers, and stunning visuals tailored to your brand identity.</p>
-        </div>
-        <div class="card">
-          <h3>Printing & Branding</h3>
-          <p>High-quality printing services and branded materials that make you stand out.</p>
+          <p class="muted">Logos, flyers, and stunning visuals tailored to your brand identity.</p>
         </div>
         <div class="card">
           <h3>Web Development & Automation</h3>
-          <p>Responsive websites, smart workflows, and modern apps built to last.</p>
+          <p class="muted">Responsive websites, smart workflows, and modern apps built to last.</p>
+        </div>
+        <div class="card">
+          <h3>Printing & Branding</h3>
+          <p class="muted">High-quality printing services and branded materials that make you stand out.</p>
         </div>
         <div class="card">
           <h3>Blockchain Solutions</h3>
-          <p>Secure smart contracts, wallets, and blockchain integrations.</p>
+          <p class="muted">Secure smart contracts, wallets, and blockchain integrations.</p>
         </div>
       </div>
     </section>
 
     <section class="section section--accent">
+      <div class="container grid cols-3">
+        <div class="card">
+          <blockquote>"GraphiTech Command transformed our brand identity with a modern logo and cohesive visuals."</blockquote>
+          <p class="muted"><strong>— Ada, Startup Founder</strong></p>
+        </div>
+        <div class="card">
+          <blockquote>"Their print quality is top-notch. We got brochures that wowed our clients."</blockquote>
+          <p class="muted"><strong>— Chinedu, Marketing Lead</strong></p>
+        </div>
+        <div class="card">
+          <blockquote>"From web development to automation, they built us a smooth system that saves hours weekly."</blockquote>
+          <p class="muted"><strong>— Sarah, Small Business Owner</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container cta">
-        <h2>Get updates from GraphiTech Command</h2>
-        <form id="newsletterForm" class="inline-form" novalidate>
-          <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
-          <button type="submit" class="btn btn--primary">Subscribe</button>
-        </form>
-        <p class="form-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+        <h2>Ready to start your project?</h2>
+        <p class="muted">Get in touch with us today to discuss your ideas and get a free quote.</p>
+        <div class="actions">
+          <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        </div>
       </div>
     </section>
   </main>
@@ -74,7 +95,7 @@
     <div class="container footer-grid">
       <div>
         <a class="brand brand--footer" href="index.html" aria-label="GraphiTech Command home">
-          <img src="assets/logo.png" alt="GraphiTech Command logo" />
+          <img src="assets/logo.png" alt="GraphiTech Command logo" width="30" height="30" />
           <span>GraphiTech Command</span>
         </a>
         <p>© <span id="year"></span> GraphiTech Command. All rights reserved.</p>
@@ -82,22 +103,23 @@
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="about.html" aria-label="About us page">About</a></li>
-          <li><a href="services.html" aria-label="Our services page">Services</a></li>
-          <li><a href="contact.html" aria-label="Contact us page">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Follow</h4>
         <ul>
-          <li><a href="#" aria-label="Twitter/X profile">Twitter/X</a></li>
-          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
-          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js" defer></script>
 </body>
 </html>

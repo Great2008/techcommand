@@ -9,67 +9,77 @@
   <link rel="canonical" href="https://www.yourwebsite.com/about.html" />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="GraphiTech Command home">
-      <img src="assets/logo.png" alt="GraphiTech Command logo" />
+      <img src="assets/logo.png" alt="GraphiTech Command logo" width="34" height="34" />
       <span>GraphiTech Command</span>
     </a>
-    <nav id="nav" class="nav">
+    <nav id="main-nav" class="nav">
       <a href="index.html" aria-label="Home page">Home</a>
-      <a href="about.html" class="active" aria-label="About us page">About</a>
+      <a href="about.html" class="active" aria-label="About us page" aria-current="page">About</a>
       <a href="services.html" aria-label="Our services page">Services</a>
+      <a href="portfolio.html" aria-label="Portfolio page">Portfolio</a>
       <a href="contact.html" class="btn btn--primary" aria-label="Contact us page">Contact</a>
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
     </nav>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </header>
 
-  <main class="container section" id="main-content">
-    <h1>About GraphiTech Command</h1>
-    <p>
-      GraphiTech Command is a dynamic company that blends creativity and technology. 
-      We specialize in <strong>graphics design, printing, and branding</strong> alongside our 
-      original tech services like <strong>web development, automation, and blockchain solutions</strong>. 
-      Our mission is to empower individuals, startups, and businesses with impactful designs 
-      and production-ready technologies.
-    </p>
-
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>Mission</h3>
-        <p>
-          To deliver innovative designs and cutting-edge tech solutions that help brands 
-          and businesses stand out while achieving efficiency and growth.
+  <main>
+    <section class="hero hero--small">
+      <div class="container">
+        <h1>About GraphiTech Command</h1>
+        <p class="muted">
+          We are a dynamic company that blends creativity and technology to empower brands and businesses.
         </p>
       </div>
-      <div class="card">
-        <h3>Values</h3>
-        <ul>
-          <li>Creativity with purpose</li>
-          <li>Clarity over complexity</li>
-          <li>Speed with quality</li>
-          <li>Customer success first</li>
-        </ul>
-      </div>
-    </div>
+    </section>
 
-    <h2>What we do</h2>
-    <p>
-      At GraphiTech Command, we combine <strong>design and branding</strong> (logos, flyers, 
-      business cards, marketing prints) with <strong>technology services</strong> 
-      (websites, apps, automation, blockchain solutions).  
-      Whether you’re a small business or a growing enterprise, we give you 
-      end-to-end support that’s creative, modern, and effective.
-    </p>
+    <section class="section">
+      <div class="container">
+        <div class="grid cols-2">
+          <div>
+            <h2>Our Mission & Values</h2>
+            <p class="muted">
+              We specialize in graphics design, printing, and branding alongside our tech services like web development, automation, and blockchain solutions. Our mission is to empower individuals, startups, and businesses with impactful designs and production-ready technologies.
+            </p>
+            <p class="muted">
+              Our core values guide every project: we prioritize **Creativity with purpose**, **Clarity over complexity**, **Speed with quality**, and always put **Customer success first**.
+            </p>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="assets/about-image.jpg" alt="A team of designers and developers collaborating on a project" class="card-image" />
+              <figcaption class="muted">
+                Our team at GraphiTech Command, blending creative and technical expertise.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent">
+      <div class="container cta">
+        <h2>Ready to start your project?</h2>
+        <p class="muted">Get in touch with us today to discuss your ideas and get a free quote.</p>
+        <div class="actions">
+          <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <a class="brand brand--footer" href="index.html" aria-label="GraphiTech Command home">
-          <img src="assets/logo.png" alt="GraphiTech Command logo" />
+          <img src="assets/logo.png" alt="GraphiTech Command logo" width="30" height="30" />
           <span>GraphiTech Command</span>
         </a>
         <p>© <span id="year"></span> GraphiTech Command. All rights reserved.</p>
@@ -77,22 +87,23 @@
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="about.html" aria-label="About us page">About</a></li>
-          <li><a href="services.html" aria-label="Our services page">Services</a></li>
-          <li><a href="contact.html" aria-label="Contact us page">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Follow</h4>
         <ul>
-          <li><a href="#" aria-label="Twitter/X profile">Twitter/X</a></li>
-          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
-          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js" defer></script>
 </body>
 </html>

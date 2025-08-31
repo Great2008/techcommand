@@ -9,94 +9,130 @@
   <link rel="canonical" href="https://www.yourwebsite.com/contact.html" />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="GraphiTech Command home">
-      <img src="assets/logo.png" alt="Tech Command logo" />
+      <img src="assets/logo.png" alt="GraphiTech Command logo" width="34" height="34" />
       <span>GraphiTech Command</span>
     </a>
-    <nav id="nav" class="nav">
+    <nav id="main-nav" class="nav">
       <a href="index.html" aria-label="Home page">Home</a>
       <a href="about.html" aria-label="About us page">About</a>
       <a href="services.html" aria-label="Our services page">Services</a>
-      <a href="contact.html" class="active btn btn--primary" aria-label="Contact us page">Contact</a>
+      <a href="portfolio.html" aria-label="Portfolio page">Portfolio</a>
+      <a href="contact.html" class="active btn btn--primary" aria-label="Contact us page" aria-current="page">Contact</a>
       <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
     </nav>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   </header>
 
-  <main class="container section">
-    <h1>Contact Us</h1>
-    <p>Tell us what you want to build. We’ll reply within 24 hours.</p>
+  <main>
+    <section class="hero hero--small">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="muted">
+          Tell us about your project, and we’ll reply within 24 hours.
+        </p>
+      </div>
+    </section>
 
-    <div class="whatsapp-contact">
-      <h2>Instant Communication</h2>
-      <p>You can also reach us instantly on WhatsApp:</p>
-      <a href="https://wa.me/message/2WH6NHHG6JVNP1" target="_blank" class="btn btn--primary" aria-label="Chat with us on WhatsApp">
-        💬 Chat with Us on WhatsApp
-      </a>
-    </div>
-
-    <hr />
-
-    <div class="contact-form">
-      <h2>Send a Message</h2>
-      <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-        <div class="grid cols-2">
-          <label for="name">
-            Name
-            <input type="text" name="name" id="name" required />
-          </label>
-          <label for="email">
-            Email
-            <input type="email" name="email" id="email" required />
-          </label>
+    <section class="section">
+      <div class="container grid cols-2">
+        <div class="card">
+          <h2>Send a Message</h2>
+          <p class="muted">
+            Use the form below to send us a detailed message about your needs.
+          </p>
+          <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <label for="name">
+              Name
+              <input type="text" name="name" id="name" required />
+            </label>
+            <label for="email">
+              Email
+              <input type="email" name="email" id="email" required />
+            </label>
+            <label for="subject">
+              Subject
+              <input type="text" name="subject" id="subject" required />
+            </label>
+            <label for="message">
+              Message
+              <textarea name="message" id="message" rows="6" required></textarea>
+            </label>
+            
+            <input type="hidden" name="_subject" value="New message from GraphiTech Command" />
+            <button type="submit" class="btn btn--primary">Send Message</button>
+            <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
+          </form>
         </div>
-        <label for="subject">
-          Subject
-          <input type="text" name="subject" id="subject" required />
-        </label>
-        <label for="message">
-          Message
-          <textarea name="message" id="message" rows="6" required></textarea>
-        </label>
-
-        <input type="hidden" name="_subject" value="New message from Tech Command website" />
-        <button type="submit" class="btn btn--primary">Send Message</button>
-        <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
-      </form>
-    </div>
+        
+        <div class="card">
+          <h2>Instant Communication</h2>
+          <p class="muted">
+            For a quicker response, you can chat with us directly on WhatsApp.
+          </p>
+          <a href="https://wa.me/message/2WH6NHHG6JVNP1" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            💬 Chat with Us on WhatsApp
+          </a>
+          <p class="muted" style="margin-top: 2rem;">
+            Or connect with us via email or social media:
+          </p>
+          <ul class="contact-list">
+            <li><a href="mailto:info@graphitech.com">info@graphitech.com</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section section--accent">
+      <div class="container cta">
+        <h2>See Our Work</h2>
+        <p class="muted">
+          Browse our portfolio to see examples of our creative and technical projects.
+        </p>
+        <div class="actions">
+          <a href="portfolio.html" class="btn btn--primary">View Our Portfolio</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <a class="brand brand--footer" href="index.html" aria-label="GraphiTech Command home">
-          <img src="assets/logo.png" alt="Tech Command logo" />
-          <span> GraphiTech Command</span>
+          <img src="assets/logo.png" alt="GraphiTech Command logo" width="30" height="30" />
+          <span>GraphiTech Command</span>
         </a>
         <p>© <span id="year"></span> GraphiTech Command. All rights reserved.</p>
       </div>
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="about.html" aria-label="About us page">About</a></li>
-          <li><a href="services.html" aria-label="Our services page">Services</a></li>
-          <li><a href="contact.html" aria-label="Contact us page">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Follow</h4>
         <ul>
-          <li><a href="#" aria-label="Twitter/X profile">Twitter/X</a></li>
-          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
-          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — GraphiTech Command</title>
+  <meta name="description" content="Explore our diverse portfolio of graphics design, printing, branding, and web development projects." />
+  <meta name="keywords" content="portfolio, projects, web design, graphics, branding, printing, blockchain, automation" />
+  <link rel="canonical" href="https://www.yourwebsite.com/portfolio.html" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="GraphiTech Command home">
+      <img src="assets/logo.png" alt="GraphiTech Command logo" width="34" height="34" />
+      <span>GraphiTech Command</span>
+    </a>
+    <nav id="main-nav" class="nav">
+      <a href="index.html" aria-label="Home page">Home</a>
+      <a href="about.html" aria-label="About us page">About</a>
+      <a href="services.html" aria-label="Our services page">Services</a>
+      <a href="portfolio.html" class="active" aria-label="Portfolio page" aria-current="page">Portfolio</a>
+      <a href="contact.html" class="btn btn--primary" aria-label="Contact us page">Contact</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+  
+  <main>
+    <section class="hero hero--small" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <h1 id="portfolio-heading">Our Portfolio</h1>
+        <p class="muted">
+          A curated collection of our creative and technical projects. See how we bring ideas to life.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="graphics">Graphics</button>
+          <button class="filter-btn" data-filter="printing">Printing</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+        </div>
+        <div class="grid cols-3 portfolio-grid">
+          <div class="portfolio-item" data-category="web">
+            <a href="#">
+              <img src="assets/portfolio/web-project-1.jpg" alt="A screenshot of a professional, modern business website" loading="lazy" width="800" height="450" />
+            </a>
+            <div class="card-content">
+              <h4>Digital Agency Website</h4>
+              <p class="muted">Responsive design and custom CMS integration for a digital agency.</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="web">
+            <a href="#">
+              <img src="assets/portfolio/web-project-2.jpg" alt="A screenshot of a clean, minimalist e-commerce store" loading="lazy" width="800" height="450" />
+            </a>
+            <div class="card-content">
+              <h4>E-commerce Store</h4>
+              <p class="muted">Full-stack development with product catalog and payment integration.</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="graphics">
+            <a href="#">
+              <img src="assets/portfolio/logo-project-1.jpg" alt="A vibrant, abstract logo for a tech company" loading="lazy" width="800" height="450" />
+            </a>
+            <div class="card-content">
+              <h4>Tech Startup Logo</h4>
+              <p class="muted">Brand identity and vector-based logo design for a tech startup.</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="graphics">
+            <a href="#">
+              <img src="assets/portfolio/social-media-kit.jpg" alt="A set of social media graphics with a consistent brand theme" loading="lazy" width="800" height="450" />
+            </a>
+            <div class="card-content">
+              <h4>Social Media Graphics</h4>
+              <p class="muted">Cohesive templates and illustrations for a brand's social presence.</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="printing">
+            <a href="#">
+              <img src="assets/portfolio/print-project-1.jpg" alt="High-quality business cards with a premium, embossed finish" loading="lazy" width="800" height="450" />
+            </a>
+            <div class="card-content">
+              <h4>Embossed Business Cards</h4>
+              <p class="muted">Professional print design on premium card stock with a custom finish.</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="blockchain">
+            <a href="#">
+              <img src="assets/portfolio/blockchain-project-1.jpg" alt="The user interface of a secure cryptocurrency wallet" loading="lazy" width="800" height="450" />
+            </a>
+            <div class="card-content">
+              <h4>Crypto Wallet UI/UX</h4>
+              <p class="muted">User-friendly interface design for a secure cryptocurrency wallet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent">
+      <div class="container cta">
+        <h2>Ready to start your project?</h2>
+        <p class="muted">
+          Contact us today to discuss your ideas and get a free quote.
+        </p>
+        <div class="actions">
+          <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html" aria-label="GraphiTech Command home">
+          <img src="assets/logo.png" alt="GraphiTech Command logo" width="30" height="30" />
+          <span>GraphiTech Command</span>
+        </a>
+        <p>© <span id="year"></span> GraphiTech Command. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter/X</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
